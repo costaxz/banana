@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width,initialscale=1.0">
+        <title>Formulario de Pizzaria</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </hed>
+    <body>
+        <h2>formulario de Pizza</h2>       
+<center>
+<form action= "#" method ="post" id="form-pedido">
+    <label for="nome"></label><br>
+    <input type="text"id= nome name="nome" requered><br>
+
+    <label for="endereço">Endereço:</label><br>
+    <input type="tel" id="telefone" name="telefone" pattern="{0.9}{10}"requered><br>
+
+    <label for="tamanho">Tamanho da Pizza</label><br>
+    <select id="tamanho" name="tamanho"requered>    
+        <option value="">Selecione o tamanho</option>
+        <option value="Pequena"></option>
+        <option value="Media"></option>
+        <option value="Grande"></option>
+    </select><br>
+        
+    <label for="sabor">sabor da Pizza</label>
+    <input type="submit"value="Fazer Pedido" 
+</form>
+<script src="validaçao_formulario.js"></script>
+</center>
+
+</body>
+</html>
