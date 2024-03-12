@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport"content='width=device-width,initial-scale=0.1'>
+        <title>Formulario de Inscrição</title>
+        <link rel="styleshee" type="text/css"href ="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Formulario de Inscrição</h2>
+            <form id="registraitionForm" onsubmit="return validateForm()">
+            <!--este e um formulario onde vc digita suas informaçoes
+            quando clica em'enviar ele verifica se vc preencheu tudo corretamente'-->
+
+            <h2>informações pessoais<h2>
+            <label for="fullName">Nome Completo:</label>
+            <!--este pedaço de texto que diz ao usuario digitar-->
+            <input type="text"id="fullName"name= "fullName" required>
+            <span id="fullNameError"class="erro"></span>
+            <!--se vc preencher corretamente o campo do nome completo
+            uma mensagem de erro aparecera aqui-->
+
+            <!--genero-->
+            <label for="gender">Gênero:</label>
+            <option value="">selecione...</option>
+            <option value="male">Masculino</option>
+            <option value="famale">Feminino</option>
+            <option value="other">Outros</option>
+            <section>
+            <span id="genderError" class="erro"></span>
+
+            <!--endereço-->
+            <label for="address">Endereço Completo:</label>
+            <input type="tel"id="phoneNymber"name="phoneNymber"required>
+            <span id="phoneNymberErro"class="erro"></span>
+                
+
+            <!--email-->
+            <label for="email">E-mail:</label>
+            <input type="maile"id="email"name="email"required>
+            <span id="emailErro"class="erro"></span>
+
+
+            <!--Informações Academias-->
+            <h3>Informações Academias</h3>
+            <label for="schoolName">Nome da Escola Atual:</label>
+            <input type="maile"id="email"name="schoolName"required>
+            <span id="schoolNameErro"class="erro"></span>
+
+
+
+            <label for="grade">Série Atual:</label>
+            <input type="grade"id="grade"name="grade"required>
+            <span id="gradeErro"class="erro"></span>
+
+
+
+            <h3>Informações Responsaveis</h3>
+            <label for="guardianName">Nome do Responsavel:</label>
+            <input type="guardianName"id="guardianName"name="guardianName"required>
+            <span id="guardianNameErro"class="erro"></span>
+
+
+            <label for="guardianContat">Contato do Responsavel:</label>
+            <input type="guardianContat"id=""name="guardianContat"required>
+            <span id="guardianContatErro"class="erro"></span>
+
+
+            <label for="cpf">CPF:</label>
+            <input type="cpf"id=""name="cpf"required>
+            <span id="cpftErro"class="erro"></span>
+
+            <label for="RG">RG:</label>
+            <input type="RG"id=""name="RG"required>
+            <span id="RGErro"class="erro"></span>
+
+
+
+
+
+
+
+
+
+            </form>
+        </div>
+    </body>
+</html>
