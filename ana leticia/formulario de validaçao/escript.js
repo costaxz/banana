@@ -44,12 +44,14 @@ function hideError(inputId) {
     var errorSpan = parent.querySelector('.error-message');
     if (errorSpan) {
         parent.removeChild(errorSpan);
-    }
-}
-function showSuccessMessage() {
-    var form = document.getElementById('registrationForm');
-    var successMessage = document.createElement('p');
-    successMessage.textContent = 'Seu cadastro foi realizado com sucesso.';
-    successMessage.style.color = 'green';
-    form.parentNode.insertBefore(successMessage, form.nextSibling);
-}
+    
+    }    
+// Tudo validado com sucesso
+    alert("Formulário enviado com sucesso!");
+    return true;
+  }
+  
+  function showErrorPopup(message) {
+    alert("Erro de validação: " + message);
+  }
+  
